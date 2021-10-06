@@ -1,0 +1,23 @@
+### Index
+GET http://localhost:3000/places
+
+### Create
+POST http://localhost:3000/places
+Content-Type: application/json
+  {
+    "name": "Colosseum",
+    "address": "Piazza del Colosseo, 1, 00184 Roma RM, Italy"
+  }
+
+### Show
+GET http://localhost:3000/places/4
+
+### Update
+PATCH http://localhost:3000/places/5
+Content-Type: application/json
+  {
+    "name": "amphitheatrum"
+  }
+
+### Destroy
+DELETE http://localhost:3000/places/5
